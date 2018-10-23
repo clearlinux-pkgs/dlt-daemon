@@ -4,7 +4,7 @@
 #
 Name     : dlt-daemon
 Version  : 2.17.0.27.g10a2c7673d2ae9d9ef8d59a417b6554881531a66
-Release  : 2
+Release  : 3
 URL      : https://github.com/GENIVI/dlt-daemon/archive/v2.17.0-27-g10a2c7673d2ae9d9ef8d59a417b6554881531a66.tar.gz
 Source0  : https://github.com/GENIVI/dlt-daemon/archive/v2.17.0-27-g10a2c7673d2ae9d9ef8d59a417b6554881531a66.tar.gz
 Summary  : Diagnostic Log and Trace
@@ -91,15 +91,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539970017
+export SOURCE_DATE_EPOCH=1540299209
 mkdir -p clr-build
 pushd clr-build
-%cmake ..
+%cmake .. -DWITH_DLT_CXX11_EXT=ON
 make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1539970017
+export SOURCE_DATE_EPOCH=1540299209
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/dlt-daemon
 cp COPYING %{buildroot}/usr/share/package-licenses/dlt-daemon/COPYING
@@ -153,6 +153,7 @@ popd
 /usr/include/dlt/dlt_client.h
 /usr/include/dlt/dlt_common.h
 /usr/include/dlt/dlt_common_api.h
+/usr/include/dlt/dlt_cpp_extension.hpp
 /usr/include/dlt/dlt_filetransfer.h
 /usr/include/dlt/dlt_offline_trace.h
 /usr/include/dlt/dlt_protocol.h
@@ -162,6 +163,7 @@ popd
 /usr/include/dlt/dlt_user_macros.h
 /usr/include/dlt/dlt_version.h
 /usr/lib64/libdlt.so
+/usr/lib64/pkgconfig/automotive-dlt-c++.pc
 /usr/lib64/pkgconfig/automotive-dlt.pc
 
 %files lib
