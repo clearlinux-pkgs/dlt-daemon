@@ -4,7 +4,7 @@
 #
 Name     : dlt-daemon
 Version  : 2.18.3
-Release  : 6
+Release  : 7
 URL      : https://github.com/GENIVI/dlt-daemon/archive/v2.18.3.tar.gz
 Source0  : https://github.com/GENIVI/dlt-daemon/archive/v2.18.3.tar.gz
 Summary  : Diagnostic Log and Trace
