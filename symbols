@@ -24,6 +24,7 @@ libdlt.so.2:dlt_buffer_status
 libdlt.so.2:dlt_buffer_write_block
 libdlt.so.2:dlt_check_envvar
 libdlt.so.2:dlt_check_library_version
+libdlt.so.2:dlt_check_rcv_data_size
 libdlt.so.2:dlt_check_storageheader
 libdlt.so.2:dlt_clean_string
 libdlt.so.2:dlt_client_cleanup
@@ -72,6 +73,7 @@ libdlt.so.2:dlt_file_free
 libdlt.so.2:dlt_file_init
 libdlt.so.2:dlt_file_message
 libdlt.so.2:dlt_file_open
+libdlt.so.2:dlt_file_quick_parsing
 libdlt.so.2:dlt_file_read
 libdlt.so.2:dlt_file_read_data
 libdlt.so.2:dlt_file_read_header
@@ -86,8 +88,8 @@ libdlt.so.2:dlt_filter_free
 libdlt.so.2:dlt_filter_init
 libdlt.so.2:dlt_filter_load
 libdlt.so.2:dlt_filter_save
-libdlt.so.2:dlt_forward_msg
 libdlt.so.2:dlt_free
+libdlt.so.2:dlt_get_appid
 libdlt.so.2:dlt_get_log_state
 libdlt.so.2:dlt_get_major_version
 libdlt.so.2:dlt_get_minor_version
@@ -194,6 +196,9 @@ libdlt.so.2:dlt_user_log_write_int8
 libdlt.so.2:dlt_user_log_write_ptr
 libdlt.so.2:dlt_user_log_write_raw
 libdlt.so.2:dlt_user_log_write_raw_formatted
+libdlt.so.2:dlt_user_log_write_sized_constant_string
+libdlt.so.2:dlt_user_log_write_sized_string
+libdlt.so.2:dlt_user_log_write_sized_utf8_string
 libdlt.so.2:dlt_user_log_write_start
 libdlt.so.2:dlt_user_log_write_start_id
 libdlt.so.2:dlt_user_log_write_string
@@ -207,6 +212,7 @@ libdlt.so.2:dlt_user_log_write_uint64_formatted
 libdlt.so.2:dlt_user_log_write_uint8
 libdlt.so.2:dlt_user_log_write_uint8_formatted
 libdlt.so.2:dlt_user_log_write_utf8_string
+libdlt.so.2:dlt_user_printf
 libdlt.so.2:dlt_user_set_userheader
 libdlt.so.2:dlt_user_trace_network
 libdlt.so.2:dlt_user_trace_network_segmented
