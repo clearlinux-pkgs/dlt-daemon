@@ -4,7 +4,7 @@
 #
 Name     : dlt-daemon
 Version  : 2.18.5
-Release  : 9
+Release  : 10
 URL      : https://github.com/GENIVI/dlt-daemon/archive/v2.18.5/dlt-daemon-2.18.5.tar.gz
 Source0  : https://github.com/GENIVI/dlt-daemon/archive/v2.18.5/dlt-daemon-2.18.5.tar.gz
 Summary  : Diagnostic Log and Trace
