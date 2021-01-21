@@ -49,6 +49,8 @@ libdlt.so.2:dlt_client_send_reset_to_factory_default
 libdlt.so.2:dlt_client_send_store_config
 libdlt.so.2:dlt_client_send_timing_pakets
 libdlt.so.2:dlt_client_send_trace_status
+libdlt.so.2:dlt_client_set_host_if_address
+libdlt.so.2:dlt_client_set_mode
 libdlt.so.2:dlt_client_set_serial_device
 libdlt.so.2:dlt_client_set_server_ip
 libdlt.so.2:dlt_client_set_socket_path
@@ -68,6 +70,7 @@ libdlt.so.2:dlt_env_ids_match
 libdlt.so.2:dlt_env_increase_ll_set
 libdlt.so.2:dlt_env_init_ll_set
 libdlt.so.2:dlt_env_ll_item_get_matching_prio
+libdlt.so.2:dlt_execute_command
 libdlt.so.2:dlt_file_close
 libdlt.so.2:dlt_file_free
 libdlt.so.2:dlt_file_init
@@ -132,7 +135,6 @@ libdlt.so.2:dlt_message_print_mixed_html
 libdlt.so.2:dlt_message_print_mixed_plain
 libdlt.so.2:dlt_message_read
 libdlt.so.2:dlt_message_set_extraparameters
-libdlt.so.2:dlt_mkdir_recursive
 libdlt.so.2:dlt_nonverbose_mode
 libdlt.so.2:dlt_print_char_string
 libdlt.so.2:dlt_print_hex
@@ -141,9 +143,9 @@ libdlt.so.2:dlt_print_id
 libdlt.so.2:dlt_print_mixed_string
 libdlt.so.2:dlt_receiver_check_and_get
 libdlt.so.2:dlt_receiver_free
-libdlt.so.2:dlt_receiver_free_unix_socket
+libdlt.so.2:dlt_receiver_free_global_buffer
 libdlt.so.2:dlt_receiver_init
-libdlt.so.2:dlt_receiver_init_unix_socket
+libdlt.so.2:dlt_receiver_init_global_buffer
 libdlt.so.2:dlt_receiver_move_to_begin
 libdlt.so.2:dlt_receiver_receive
 libdlt.so.2:dlt_receiver_remove
@@ -162,6 +164,7 @@ libdlt.so.2:dlt_set_loginfo_parse_service_id
 libdlt.so.2:dlt_set_resend_timeout_atexit
 libdlt.so.2:dlt_set_storageheader
 libdlt.so.2:dlt_setup_serial
+libdlt.so.2:dlt_strnlen_s
 libdlt.so.2:dlt_unlock_mutex
 libdlt.so.2:dlt_unregister_app
 libdlt.so.2:dlt_unregister_app_flush_buffered_logs
